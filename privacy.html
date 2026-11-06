@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CloudySaves privacy policy</title>
+<meta name="robots" content="noindex"><style>body{max-width:720px;margin:40px auto;padding:0 20px;font:16px/1.6 "Segoe UI",system-ui,sans-serif;color:#222}</style>
+</head>
+<body>
+<div class="wrap">
+  
+  <main class="doc">
+    <h1>Privacy policy</h1>
+    <p class="small">Last updated 6 November 2026</p>
+
+    <p>CloudySaves is a Windows app that backs up your game save files to your own Google Drive and restores them on your other PCs. It runs entirely on your computer. There is no CloudySaves server, and the developer never receives your files or your account details.</p>
+
+    <h2>What CloudySaves accesses</h2>
+    <ul>
+      <li><b>Game save files on your PC:</b> found with the Ludusavi save database, Steam emulator folders, and folders you add yourself. They're copied into a local backup folder on your PC.</li>
+      <li><b>Your Google Drive, through Google's sign-in:</b> CloudySaves requests only the <code>drive.file</code> permission. It can only see and change files and folders it created itself (the CloudySaves folder). It can't read any other file in your Drive.</li>
+      <li><b>Basic Drive information:</b> how much space is free, shown in Settings and checked before uploading so an upload can't fill your Drive.</li>
+    </ul>
+
+    <h2>How your Google user data is used</h2>
+    <ul>
+      <li>Save files are uploaded to, listed in and downloaded from the CloudySaves folder in your own Drive, only to back up, sync and restore your saves.</li>
+      <li>Your Google sign-in token is stored only on your PC, in the rclone configuration file in your Windows user folder. It is never sent anywhere except to Google.</li>
+      <li>Your data is not sold, shared, used for advertising, or used to train AI or machine-learning models.</li>
+      <li>CloudySaves' use of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
+    </ul>
+
+    <h2>Other services the app contacts</h2>
+    <ul>
+      <li><b>Steam's image servers,</b> to download game cover art by Steam App ID, and <b>SteamGridDB,</b> only if you add your own key. They receive the game ID or name being looked up.</li>
+      <li><b>GitHub and rclone.org,</b> to check for and download updates of the bundled Ludusavi and rclone tools.</li>
+      <li>CloudySaves has no analytics, telemetry or crash reporting. Logs stay on your PC.</li>
+    </ul>
+
+    <h2>Data on your PC</h2>
+    <p>Settings, sync state, a cover cache and a log are kept in <code>%LOCALAPPDATA%\CloudySaves</code>. Uninstalling the app keeps them, along with your saves; you can delete that folder yourself.</p>
+
+    <h2>Removing access and deleting data</h2>
+    <ul>
+      <li>Remove CloudySaves' access at any time: in your Google account, go to Security, then Third-party apps and services.</li>
+      <li>Delete cloud copies per game with "Delete from cloud" in the app, or delete the CloudySaves folder in your Drive.</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>CloudySaves isn't directed at children under 13 and doesn't knowingly collect their information.</p>
+
+    <h2>Changes and contact</h2>
+    <p>Changes to this policy will be posted on this page. For questions, open an issue at <a href="https://github.com/Eng-FawazAlzayed/cloudysaves/issues">github.com/Eng-FawazAlzayed/cloudysaves/issues</a>.</p>
+  </main>
+</div>
+<p><a href="./">Back</a></p>
+</body>
+</html>
